@@ -22,7 +22,6 @@ Commands list:
 |------------------|-----------------------------------------------|
 | `ls` or `dir`    | Lists files and folders in the current directory |
 | `cd <path>`      | Changes to directory `<path>`                  |
-| `cd..`           | Goes up one directory                          |
 | `mkdir <name>`   | Creates a new directory `<name>`               |
 | `rmdir <name>`   | Removes directory `<name>`                     |
 | `exit`           | Exits the program                              |
