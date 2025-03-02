@@ -2,7 +2,7 @@
 A simple command-line file manager built in Python
 ## Requirements:
 - Python 3
-## Installing:
+## Installing (for linux):
 Use git clone:
 ```
 git clone https://github.com/H1keDev/HikePath.git
