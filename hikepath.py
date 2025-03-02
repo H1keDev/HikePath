@@ -21,7 +21,6 @@ def main():
             print("Available commands:")
             print("  ls (or dir)    - List files and folders in current directory")
             print("  cd <path>      - Change to directory <path>")
-            print("  cd..           - Go up one directory")
             print("  mkdir <name>   - Create a new directory <name>")
             print("  rmdir <name>   - Remove directory <name>")
             print("  exit           - Exit the program")
@@ -36,11 +35,7 @@ def main():
                     print(f"Current path: {os.getcwd()}")
                 except Exception as e:
                     print(f"An error occurred: {e}")
-
-        elif command == "cd..":
-            os.chdir("..")
-            print(f"Current path: {os.getcwd()}")
-
+                    
         elif command == "mkdir":
             if argument == "":
                 print("An error occurred: Argument is missing")
@@ -66,7 +61,7 @@ def main():
             break
 
         else:
-            print("Bad command")
+            print("Unknown command")
 
 
 main()
