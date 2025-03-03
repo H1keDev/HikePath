@@ -18,11 +18,18 @@ python3 hikepath.py
 ## Using:
 Commands list:
 
-| **Command**      | **Description**                               |
-|------------------|-----------------------------------------------|
-| `ls` or `dir`    | Lists files and folders in the current directory |
-| `cd <path>`      | Changes to directory `<path>`                  |
-| `mkdir <name>`   | Creates a new directory `<name>`               |
-| `rmdir <name>`   | Removes directory `<name>`                     |
-| `exit`           | Exits the program                              |
-| `help`           | Shows the help message                         |
+| Command                   | Description                                                                                   |
+|---------------------------|-----------------------------------------------------------------------------------------------|
+| `ls` (or `dir`)            | List files and folders in the current directory or at `<path>`                                |
+| `cd <path>`                | Change to directory `<path>`                                                                  |
+| `mkdir <name>`             | Create a new directory `<name>`                                                                |
+| `rmdir <name> <argument>`  | Remove directory `<name>`. Use `-r` for recursive removal.                                     |
+| `exit`                     | Exit the program                                                                               |
+| `help`                     | Show this help message                                                                          |
+| `history`                  | Show the last 5 commands                                                                       |
+
+### Note:
+- When using `cd`, if no path is specified, it defaults to the home directory.
+- Use `rmdir` without `-r` for non-recursive deletion (only empty directories).
+- Errors may occur if a directory or file does not exist or if there are permission issues.
+
